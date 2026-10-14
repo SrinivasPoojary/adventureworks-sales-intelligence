@@ -6,8 +6,8 @@ An end-to-end e-commerce analytics suite and executive scenario companion analyz
 
 ## Interactive Deliverables
 
-* **Live Web Companion (NEXUS IQ):** [Launch Interactive App](https://<[your-username](https://github.com/SrinivasPoojary/)>.github.io/adventureworks-sales-intelligence/)
-* **Raw Power BI File (.pbix):** [Download Power BI Model](./AdventureWorks_Sales_Intelligence.pbix)
+* **Live Web Companion (NEXUS IQ):** [Launch Interactive App](https://github.com/SrinivasPoojary/adventureworks-sales-intelligence/blob/main/index.html)
+* **Raw Power BI File (.pbix):** [Download Power BI Model](https://github.com/SrinivasPoojary/adventureworks-sales-intelligence/raw/main/AdventureWorks_Sales_Intelligence.pbix)
 
 ---
 
