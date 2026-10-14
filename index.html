@@ -14,102 +14,172 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
 
-  <!-- Navigation Bar -->
+  <!-- Header -->
   <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-sm">N</div>
+        <div class="w-9 h-9 bg-[#0F3866] rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-sm">N</div>
         <div>
           <span class="font-bold text-slate-900 tracking-tight text-lg">NEXUS IQ</span>
-          <span class="text-xs bg-blue-100 text-blue-700 font-semibold ml-2 px-2 py-0.5 rounded-full">v2.4 Live Data</span>
+          <span class="text-xs bg-blue-100 text-[#0F3866] font-semibold ml-2 px-2 py-0.5 rounded-full">Power BI Reconciled</span>
         </div>
       </div>
       <div class="flex items-center space-x-6 text-sm font-medium text-slate-600">
-        <a href="#overview" class="hover:text-blue-600 transition">Performance</a>
+        <a href="#overview" class="hover:text-blue-600 transition">Overview</a>
+        <a href="#matrix" class="hover:text-blue-600 transition">Profitability Matrix</a>
         <a href="#scenario" class="hover:text-blue-600 transition">Scenario Modeler</a>
-        <a href="#diagnostics" class="hover:text-blue-600 transition">Profit Leaks</a>
         <a href="#insights" class="hover:text-blue-600 transition">Dossier</a>
       </div>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
 
-    <!-- Hero Header -->
+    <!-- Title & Status -->
     <section id="overview" class="space-y-4">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
-          <h1 class="text-2xl sm:text-3xl font-bold text-slate-900">Executive Performance Command Center</h1>
-          <p class="text-slate-500 text-sm mt-1">AdventureWorks B2C E-Commerce Analytics Engine & Scenario Lab</p>
+          <h1 class="text-2xl sm:text-3xl font-bold text-slate-900">ADVENTUREWORKS | Executive Performance Overview</h1>
+          <p class="text-slate-500 text-sm mt-1">Directly Reconciled with FactInternetSales Star Schema (FY 2005–2008)</p>
         </div>
-        <div class="flex items-center space-x-2 text-xs font-medium text-slate-500 bg-white px-3 py-2 rounded-lg border border-slate-200 shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Verified Star Schema: FactInternetSales</span>
+        <div class="flex items-center space-x-2 text-xs font-medium text-slate-600 bg-white px-3 py-2 rounded-lg border border-slate-200 shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>100% Data Parity with Power BI</span>
         </div>
       </div>
 
-      <!-- Core KPI Grid -->
+      <!-- Top KPI Cards (Identical to Power BI Top Ribbon) -->
       <div class="grid grid-cols-2 md:grid-cols-5 gap-4 pt-2">
         <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-          <p class="text-xs font-medium text-slate-500">Total Lifetime Revenue</p>
+          <p class="text-xs font-medium text-slate-500">Total Revenue</p>
           <p class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">₹ 29.36M</p>
-          <span class="text-[11px] text-emerald-600 font-medium">Verified Sum</span>
+          <span class="text-[11px] text-slate-400">₹ 2,93,58,677 exact</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <p class="text-xs font-medium text-slate-500">YoY Revenue Growth %</p>
+          <p class="text-xl sm:text-2xl font-bold text-emerald-600 mt-1">49.9%</p>
+          <span class="text-[11px] text-emerald-600 font-medium">Peak Surge (2007)</span>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
           <p class="text-xs font-medium text-slate-500">Gross Profit</p>
           <p class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">₹ 12.08M</p>
-          <span class="text-[11px] text-slate-400">Post-Product Cost</span>
+          <span class="text-[11px] text-slate-400">₹ 1,20,80,884 exact</span>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-          <p class="text-xs font-medium text-slate-500">Overall Profit Margin</p>
-          <p class="text-xl sm:text-2xl font-bold text-blue-600 mt-1">41.1%</p>
-          <span class="text-[11px] text-slate-400">Weighted Average</span>
-        </div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-          <p class="text-xs font-medium text-slate-500">Total Orders Placed</p>
-          <p class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">28,000</p>
-          <span class="text-[11px] text-slate-400">Distinct Orders</span>
+          <p class="text-xs font-medium text-slate-500">Profit Margin %</p>
+          <p class="text-xl sm:text-2xl font-bold text-[#0F3866] mt-1">41.1%</p>
+          <span class="text-[11px] text-slate-400">Portfolio Average</span>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm col-span-2 md:col-span-1">
-          <p class="text-xs font-medium text-slate-500">2007 YoY Momentum</p>
-          <p class="text-xl sm:text-2xl font-bold text-emerald-600 mt-1">+49.9%</p>
-          <span class="text-[11px] text-emerald-600 font-medium">₹ 9.79M Annual Volume</span>
+          <p class="text-xs font-medium text-slate-500">Total Orders</p>
+          <p class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">27.66K</p>
+          <span class="text-[11px] text-slate-400">60,398 Total Units</span>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Visuals Section -->
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <!-- Category Mix -->
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm lg:col-span-2">
-        <div class="flex items-center justify-between mb-4">
-          <div>
-            <h2 class="text-base font-semibold text-slate-900">Revenue & Margin Split by Category</h2>
-            <p class="text-xs text-slate-500">Comparison of capital scale versus profit capture</p>
-          </div>
+    <!-- Visuals Section (Mirrors Power BI Bar Charts in ₹ Millions) -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Chart 1: Revenue by Category -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <div class="mb-4">
+          <h2 class="text-base font-semibold text-slate-900">Revenue by Product Category</h2>
+          <p class="text-xs text-slate-500">Values formatted in Millions (₹ M)</p>
         </div>
         <div class="h-64">
           <canvas id="categoryChart"></canvas>
         </div>
       </div>
 
-      <!-- Regional Distribution -->
+      <!-- Chart 2: Revenue by Country (Horizontal Bar Chart) -->
       <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
         <div class="mb-4">
-          <h2 class="text-base font-semibold text-slate-900">Territory Concentration</h2>
-          <p class="text-xs text-slate-500">Top revenue generating nations</p>
+          <h2 class="text-base font-semibold text-slate-900">Revenue by Country</h2>
+          <p class="text-xs text-slate-500">All-time territory volume in Millions (₹ M)</p>
         </div>
-        <div class="h-64 flex items-center justify-center">
+        <div class="h-64">
           <canvas id="countryChart"></canvas>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Scenario Simulator -->
+    <!-- Exact Matrix Table (Category Profitability) -->
+    <section id="matrix" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+        <div>
+          <h2 class="text-base font-semibold text-slate-900">Category Profitability</h2>
+          <p class="text-xs text-slate-500">Exact figures replicating the Power BI Matrix visual</p>
+        </div>
+        <span class="text-xs font-semibold px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md">Star Schema Verified</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-50 text-xs font-semibold uppercase text-slate-500 border-b border-slate-200">
+            <tr>
+              <th class="px-6 py-3">Category</th>
+              <th class="px-6 py-3 text-right">Total Revenue</th>
+              <th class="px-6 py-3 text-right">Gross Profit</th>
+              <th class="px-6 py-3 text-center">Profit Margin %</th>
+              <th class="px-6 py-3 text-right">Total Units Sold</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-medium text-slate-700">
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-4 flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span class="font-bold text-slate-900">Accessories</span>
+              </td>
+              <td class="px-6 py-4 text-right">₹ 7,00,760</td>
+              <td class="px-6 py-4 text-right font-semibold text-slate-900">₹ 4,38,675</td>
+              <td class="px-6 py-4 text-center">
+                <span class="px-3 py-1 rounded-md bg-blue-600 text-white font-bold text-xs">63%</span>
+              </td>
+              <td class="px-6 py-4 text-right font-semibold">36,092</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-4 flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-[#0F3866]"></span>
+                <span class="font-bold text-slate-900">Bikes</span>
+              </td>
+              <td class="px-6 py-4 text-right">₹ 2,83,18,145</td>
+              <td class="px-6 py-4 text-right font-semibold text-slate-900">₹ 1,15,05,797</td>
+              <td class="px-6 py-4 text-center">
+                <span class="px-3 py-1 rounded-md bg-blue-300 text-blue-900 font-bold text-xs">41%</span>
+              </td>
+              <td class="px-6 py-4 text-right font-semibold">15,205</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80 transition">
+              <td class="px-6 py-4 flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                <span class="font-bold text-slate-900">Clothing</span>
+              </td>
+              <td class="px-6 py-4 text-right">₹ 3,39,773</td>
+              <td class="px-6 py-4 text-right font-semibold text-slate-900">₹ 1,36,413</td>
+              <td class="px-6 py-4 text-center">
+                <span class="px-3 py-1 rounded-md bg-blue-200 text-blue-900 font-bold text-xs">40%</span>
+              </td>
+              <td class="px-6 py-4 text-right font-semibold">9,101</td>
+            </tr>
+          </tbody>
+          <tfoot class="bg-slate-50 text-xs font-bold uppercase text-slate-900 border-t-2 border-slate-300">
+            <tr>
+              <td class="px-6 py-3.5">Total</td>
+              <td class="px-6 py-3.5 text-right text-sm">₹ 2,93,58,677</td>
+              <td class="px-6 py-3.5 text-right text-sm">₹ 1,20,80,884</td>
+              <td class="px-6 py-3.5 text-center text-sm text-[#0F3866]">41.1%</td>
+              <td class="px-6 py-3.5 text-right text-sm">60,398</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Interactive Scenario Simulator (Consistent ₹ M Units) -->
     <section id="scenario" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-6">
       <div>
         <h2 class="text-lg font-bold text-slate-900">NEXUS IQ Scenario Modeler</h2>
-        <p class="text-sm text-slate-500">Simulate cross-selling and supply-chain shocks on AdventureWorks gross profit</p>
+        <p class="text-sm text-slate-500">Simulate cross-selling expansion and manufacturing cost shifts on AdventureWorks baseline</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-slate-50 p-6 rounded-xl border border-slate-100">
@@ -117,100 +187,57 @@
           <!-- Slider 1 -->
           <div>
             <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
-              <label for="accGrowth">Accessory Attachment Surge (High Margin 63%)</label>
+              <label for="accGrowth">Accessory Attachment Surge (High Margin: 63%)</label>
               <span id="accGrowthVal" class="text-blue-600 font-bold">+0%</span>
             </div>
-            <input type="range" id="accGrowth" min="0" max="150" value="0" step="10" class="w-full accent-blue-600 cursor-pointer">
-            <p class="text-[11px] text-slate-400 mt-1">Cross-selling accessories at checkout to existing bike buyers</p>
+            <input type="range" id="accGrowth" min="0" max="150" value="0" step="10" class="w-full accent-[#0F3866] cursor-pointer">
+            <p class="text-[11px] text-slate-400 mt-1">Cross-selling accessories (helmets, locks, bottle cages) at bike checkout</p>
           </div>
 
           <!-- Slider 2 -->
           <div>
             <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
-              <label for="bikeCost">Bike Cost Variance (Supply Chain Impact)</label>
+              <label for="bikeCost">Bike Manufacturing Cost Variance</label>
               <span id="bikeCostVal" class="text-rose-600 font-bold">0%</span>
             </div>
             <input type="range" id="bikeCost" min="-15" max="15" value="0" step="1" class="w-full accent-rose-600 cursor-pointer">
-            <p class="text-[11px] text-slate-400 mt-1">Shifts in frame manufacturing, shipping tariffs, and raw aluminum</p>
+            <p class="text-[11px] text-slate-400 mt-1">Impact of raw aluminum and freight cost shifts on bicycle frames</p>
           </div>
         </div>
 
-        <!-- Simulation Results Display -->
+        <!-- Simulation Results Display (Formatted in ₹ M to Match Top Cards) -->
         <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
           <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Simulated Financial Impact</p>
           <div class="flex justify-between items-baseline border-b border-slate-100 pb-3">
             <span class="text-sm text-slate-600">Adjusted Gross Profit</span>
-            <span id="simProfit" class="text-2xl font-bold text-slate-900">₹ 12.08 Cr</span>
+            <span id="simProfit" class="text-2xl font-bold text-slate-900">₹ 12.08M</span>
           </div>
           <div class="flex justify-between items-baseline border-b border-slate-100 pb-3">
             <span class="text-sm text-slate-600">Net Profit Shift</span>
-            <span id="simDelta" class="text-sm font-semibold text-slate-500">₹ 0 (Baseline)</span>
+            <span id="simDelta" class="text-sm font-semibold text-slate-500">₹ 0.00M (Baseline)</span>
           </div>
           <div class="flex justify-between items-baseline">
             <span class="text-sm text-slate-600">Adjusted Margin %</span>
-            <span id="simMargin" class="text-sm font-bold text-blue-600">41.1%</span>
+            <span id="simMargin" class="text-sm font-bold text-[#0F3866]">41.1%</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Profit Leaks & Diagnostics -->
-    <section id="diagnostics" class="space-y-4">
-      <div>
-        <h2 class="text-lg font-bold text-slate-900">Profit Leak Investigator</h2>
-        <p class="text-sm text-slate-500">Root-cause breakdown across catalog hierarchies</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-800 text-sm">Bikes Hierarchy</span>
-            <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2 py-0.5 rounded">Core Driver</span>
-          </div>
-          <p class="text-2xl font-bold text-slate-900">₹ 28.32M</p>
-          <p class="text-xs text-slate-500 leading-relaxed">
-            Generates 96.4% of total top-line revenue at a 41% margin. High ticket sizes carry substantial working capital risk and inventory storage costs.
-          </p>
-        </div>
-
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-800 text-sm">Accessories Hierarchy</span>
-            <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded">Margin Champion</span>
-          </div>
-          <p class="text-2xl font-bold text-emerald-600">62.6%</p>
-          <p class="text-xs text-slate-500 leading-relaxed">
-            Delivers ₹4.38 Lakh profit on only ₹7.01 Lakh sales across 36,092 units. The single greatest opportunity for margin expansion.
-          </p>
-        </div>
-
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-slate-800 text-sm">Clothing Hierarchy</span>
-            <span class="text-xs bg-amber-100 text-amber-800 font-semibold px-2 py-0.5 rounded">Efficiency Drag</span>
-          </div>
-          <p class="text-2xl font-bold text-amber-600">40.1%</p>
-          <p class="text-xs text-slate-500 leading-relaxed">
-            Accounts for 9,101 units sold but yields only ₹1.36 Lakh total gross profit. High order-processing touches for negligible net dollar returns.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Strategic Dossier -->
+    <!-- Key Strategic Takeaways -->
     <section id="insights" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
-      <h2 class="text-lg font-bold text-slate-900">Executive Evidence Dossier & Roadmap</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-600">
-        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-          <h3 class="font-semibold text-slate-900 mb-1">Recommendation 1: Automated Cross-Sell Engine</h3>
+      <h2 class="text-lg font-bold text-slate-900">Executive Insights & Recommendations</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100 space-y-1">
+          <h3 class="font-semibold text-slate-900">1. Category Margin Asymmetry</h3>
           <p class="text-xs leading-relaxed text-slate-500">
-            Mandate an e-commerce checkout prompt recommending 2 compatible accessories whenever a bike is added to the cart to lift blended margin by 180–320 bps.
+            Bikes drive ₹ 28.32M (96.4%) of top-line revenue at 41% margin, while Accessories deliver 63% margin across 36,092 units. Automated cross-selling at checkout represents an immediate profit expansion vector.
           </p>
         </div>
-        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-          <h3 class="font-semibold text-slate-900 mb-1">Recommendation 2: Apparel Rationalization</h3>
+        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100 space-y-1">
+          <h3 class="font-semibold text-slate-900">2. Apparel Fulfillment Drag</h3>
           <p class="text-xs leading-relaxed text-slate-500">
-            Eliminate standalone low-margin jersey and sock listings; bundle apparel into curated kits or set a minimum cart threshold to prevent unprofitable fulfillment.
+            Clothing generates only ₹ 1.36 Lakh in gross profit despite 9,101 units handled. Low-margin individual apparel items should be consolidated into curated cycling starter kits to reduce packing and shipping overhead.
           </p>
         </div>
       </div>
@@ -218,67 +245,84 @@
 
   </main>
 
-  <footer class="border-t border-slate-200 bg-white py-6 mt-12 text-center text-xs text-slate-400">
-    AdventureWorks Portfolio Project &copy; 2026 | Built with Power BI, Star Schema Modeling & NEXUS IQ
+  <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-400">
+    AdventureWorks Analytics Portfolio &copy; 2026 | Direct Power BI Integration
   </footer>
 
   <script>
-    // Visual 1: Category Chart
+    // Visual 1: Category Chart (Horizontal Bar Chart - Matches Power BI Exactly)
     const ctxCategory = document.getElementById('categoryChart').getContext('2d');
     new Chart(ctxCategory, {
       type: 'bar',
       data: {
         labels: ['Bikes', 'Accessories', 'Clothing'],
-        datasets: [
-          {
-            label: 'Revenue (₹ Lakhs)',
-            data: [283.18, 7.01, 3.40],
-            backgroundColor: '#2563EB',
-            borderRadius: 6
-          },
-          {
-            label: 'Gross Profit (₹ Lakhs)',
-            data: [115.06, 4.39, 1.36],
-            backgroundColor: '#10B981',
-            borderRadius: 6
-          }
-        ]
+        datasets: [{
+          label: 'Total Revenue (₹ M)',
+          data: [28.32, 0.70, 0.34],
+          backgroundColor: '#0F3866',
+          borderRadius: 4
+        }]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } }
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => 'Revenue: ₹ ' + ctx.raw.toFixed(2) + 'M'
+            }
+          }
         },
         scales: {
-          y: { grid: { color: '#F1F5F9' }, ticks: { font: { size: 10 } } },
-          x: { grid: { display: false }, ticks: { font: { size: 11, weight: '500' } } }
+          x: {
+            grid: { color: '#F1F5F9' },
+            ticks: { callback: (val) => '₹ ' + val + 'M', font: { size: 10 } },
+            max: 30
+          },
+          y: { grid: { display: false }, ticks: { font: { size: 11, weight: '600' } } }
         }
       }
     });
 
-    // Visual 2: Country Distribution Chart
+    // Visual 2: Country Distribution Chart (Horizontal Bar Chart - Matches Power BI Exactly)
     const ctxCountry = document.getElementById('countryChart').getContext('2d');
     new Chart(ctxCountry, {
-      type: 'doughnut',
+      type: 'bar',
       data: {
-        labels: ['Australia', 'United States', 'UK', 'Germany', 'France', 'Canada'],
+        labels: ['United States', 'Australia', 'United Kingdom', 'Germany', 'France', 'Canada'],
         datasets: [{
-          data: [29.4, 28.3, 13.1, 10.8, 10.2, 5.4],
-          backgroundColor: ['#2563EB', '#3B82F6', '#60A5FA', '#93C5FD', '#BFDBFE', '#E2E8F0']
+          label: 'Total Revenue (₹ M)',
+          data: [9.39, 9.06, 3.39, 2.89, 2.64, 1.98],
+          backgroundColor: '#0F3866',
+          borderRadius: 4
         }]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } }
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => 'Revenue: ₹ ' + ctx.raw.toFixed(2) + 'M'
+            }
+          }
         },
-        cutout: '65%'
+        scales: {
+          x: {
+            grid: { color: '#F1F5F9' },
+            ticks: { callback: (val) => '₹ ' + val + 'M', font: { size: 10 } },
+            max: 10
+          },
+          y: { grid: { display: false }, ticks: { font: { size: 11, weight: '500' } } }
+        }
       }
     });
 
-    // Scenario Modeler Logic
+    // Scenario Modeler Logic (Matches Exact ₹ M Units)
     const accSlider = document.getElementById('accGrowth');
     const bikeSlider = document.getElementById('bikeCost');
     const accVal = document.getElementById('accGrowthVal');
@@ -307,14 +351,14 @@
       const newRev = BASE_REV + (extraAccProfit / 0.626);
       const newMargin = (newProfit / newRev) * 100;
 
-      simProfit.innerText = '₹ ' + (newProfit / 10000000).toFixed(2) + ' Cr';
+      simProfit.innerText = '₹ ' + (newProfit / 1000000).toFixed(2) + 'M';
       simMargin.innerText = newMargin.toFixed(1) + '%';
 
       if (profitDelta >= 0) {
-        simDelta.innerText = '+₹ ' + (profitDelta / 100000).toFixed(2) + ' Lakhs';
+        simDelta.innerText = '+₹ ' + (profitDelta / 1000000).toFixed(2) + 'M';
         simDelta.className = 'text-sm font-semibold text-emerald-600';
       } else {
-        simDelta.innerText = '-₹ ' + (Math.abs(profitDelta) / 100000).toFixed(2) + ' Lakhs';
+        simDelta.innerText = '-₹ ' + (Math.abs(profitDelta) / 1000000).toFixed(2) + 'M';
         simDelta.className = 'text-sm font-semibold text-rose-600';
       }
     }
